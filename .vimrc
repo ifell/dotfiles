@@ -3,6 +3,9 @@ let &runtimepath.=',/home/ifell/dotfiles/.vim'
 " http://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
 set nocompatible
 
+" Prevents some security exploits having to do with modelines in files.
+set modelines=0
+
 execute pathogen#infect()
 syntax on
 filetype plugin indent on

@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/easymotion.git"]
 	path = .vim/bundle/easymotion.git
 	url = https://github.com/easymotion/vim-easymotion
+[submodule ".vim/bundle/ack.git"]
+	path = .vim/bundle/ack.git
+	url = https://github.com/mileszs/ack.vim.git

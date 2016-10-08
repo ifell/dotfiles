@@ -1,3 +1,10 @@
+let &runtimepath.=',/home/ifell/dotfiles/.vim'
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+
+
 " Unmap the arrow keys
 no <down> ddp
 no <left> <Nop>
@@ -19,7 +26,3 @@ imap <leader>' ''<ESC>i
 imap <leader>" ""<ESC>i
 imap <leader>( ()<ESC>i
 imap <leader>[ []<ESC>i
-
-execute pathogen#infect()
-syntax on
-filetype plugin indent on

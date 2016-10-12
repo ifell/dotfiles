@@ -7,3 +7,9 @@
 [submodule ".vim/bundle/ack.git"]
 	path = .vim/bundle/ack.git
 	url = https://github.com/mileszs/ack.vim.git
+[submodule ".vim/bundle/ctrlp.git"]
+	path = .vim/bundle/ctrlp.git
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule ".vim/bundle/autoformat.git"]
+	path = .vim/bundle/autoformat.git
+	url = https://github.com/Chiel92/vim-autoformat.git

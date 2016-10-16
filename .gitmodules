@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/autoformat.git"]
 	path = .vim/bundle/autoformat.git
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule ".vim/bundle/vim-commentary.git"]
+	path = .vim/bundle/vim-commentary.git
+	url = git://github.com/tpope/vim-commentary.git

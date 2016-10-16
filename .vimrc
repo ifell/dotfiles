@@ -11,6 +11,22 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" indent with two spaces
+filetype plugin indent on
+
+" show existing tab with 2 spaces width
+set tabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+" On pressing tab, insert 2 spaces
+set expandtab
+
+" Disable continuous comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" bind the enter key
+nmap <CR> o <Esc>
+
 " Use ag instead of acki
 if executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'                                                   

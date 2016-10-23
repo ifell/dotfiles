@@ -1,5 +1,13 @@
 let &runtimepath.=',/home/ifell/dotfiles/.vim'
 
+" map <leader> to ,
+let mapleader = ';' 
+
+" bind buffer keys
+map <leader>n :bn<cr>
+map <leader>p :bp<cr>
+map <leader>d :bd<cr>  
+
 " http://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
 set nocompatible
 
@@ -12,8 +20,6 @@ syntax on
 filetype plugin indent on
 
 " indent with two spaces
-filetype plugin indent on
-
 " show existing tab with 2 spaces width
 set tabstop=2
 " when indenting with '>', use 2 spaces width
@@ -26,6 +32,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " bind the enter key
 nmap <CR> o <Esc>
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Use ag instead of acki
 if executable('ag')
@@ -64,7 +76,7 @@ endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
 
-" do absolute numbers by defaulti
+" do absolute numbers by default
 set number
 
 " Unmap the arrow keys

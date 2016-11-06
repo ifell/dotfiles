@@ -33,12 +33,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " bind the enter key
 nmap <CR> o <Esc>
 
-" Enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-
-" Show just the filename
-let g:airline#extensions#tabline#fnamemod = ':t'
-
 " Use ag instead of acki
 if executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'                                                   

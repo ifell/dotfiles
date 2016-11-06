@@ -22,3 +22,6 @@
 [submodule "/home/ifell/dotfiles/.vim/bundle/vim-airline-themes"]
 	path = /home/ifell/dotfiles/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".vim/bundle/vim-airline-themes.git"]
+	path = .vim/bundle/vim-airline-themes.git
+	url = https://github.com/vim-airline/vim-airline-themes
